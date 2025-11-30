@@ -1,0 +1,107 @@
+
+================================================================================
+HR VIRTUAL ASSISTANT - CONVERSATION SUMMARY
+================================================================================
+
+Session Information:
+- Date: 2025-11-16 11:43:34
+- Total Queries: 5
+- Dataset: 1470 employees
+- Model: LogisticRegression
+
+Conversation Log:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+[2025-11-16 11:42:10] Query 1:
+User: show department analysis
+
+Assistant: DEPARTMENT ANALYSIS:
+
+Attrition by Department:
+1. Sales: 20.63% (HIGHEST)
+2. Human Resources: 19.05%
+3. Research & Development: 13.84% (LOWEST)
+
+FOCUS AREA: Sales
+- 4.5% above company average
+- Estima...
+--------------------------------------------------------------------------------
+
+[2025-11-16 11:42:26] Query 2:
+User: department turnover
+
+Assistant: ATTRITION ANALYSIS:
+
+Current Rate: 16.12%
+Industry Average: 13-15%
+Status: ABOVE AVERAGE (Action needed)
+
+Breakdown:
+- Employees Left: 237
+- Employees Stayed: 1233
+
+TOP CONTRIBUTING FACTORS:
+1. Low jo...
+--------------------------------------------------------------------------------
+
+[2025-11-16 11:42:45] Query 3:
+User: stats
+
+Assistant: HR ANALYTICS DASHBOARD:
+
+COMPANY OVERVIEW:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total Employees: 1,470
+Attrition Rate: 16.12%
+Average Age: 36.9 years
+Average Tenure: 7.0 years
+Average Income: $6,503/month
+
+AT...
+--------------------------------------------------------------------------------
+
+[2025-11-16 11:43:08] Query 4:
+User: retention strategies
+
+Assistant: EVIDENCE-BASED RETENTION STRATEGIES:
+
+HIGH IMPACT (Implement First):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Improve Job Satisfaction
+   - Regular 1-on-1 feedback sessions
+   - Recognition and rewards program...
+--------------------------------------------------------------------------------
+
+[2025-11-16 11:43:25] Query 5:
+User: salary impact
+
+Assistant: COMPENSATION ANALYSIS:
+
+Current Statistics:
+- Average Monthly Income: $6,503
+- Median Monthly Income: $4,919
+- Range: $1,009 - $19,999
+
+Attrition by Income Level:
+- Below Median: 21.77% attrition
+- Ab...
+--------------------------------------------------------------------------------
+
+================================================================================
+CHATBOT CAPABILITIES DEMONSTRATED:
+================================================================================
+
+✓ Attrition rate analysis
+✓ Department-wise insights
+✓ Retention strategy recommendations
+✓ Risk assessment
+✓ Salary impact analysis
+✓ Overtime analysis
+✓ Job satisfaction insights
+✓ Demographics analysis
+✓ Statistical overview
+
+================================================================================
+END OF SESSION
+================================================================================

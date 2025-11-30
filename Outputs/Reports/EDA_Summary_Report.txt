@@ -1,0 +1,4 @@
+EDA Summary Report
+
+Attrition Rate: 16.12%
+Rows: 1470

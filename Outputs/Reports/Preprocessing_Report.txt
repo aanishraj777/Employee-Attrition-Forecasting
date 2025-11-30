@@ -1,0 +1,115 @@
+
+================================================================================
+DATA PREPROCESSING SUMMARY REPORT
+IBM HR Analytics - Machine Learning Pipeline
+================================================================================
+
+1. DATASET INFORMATION
+────────────────────────────────────────────────────────────────────────────────
+   Original Dataset:
+   • File: WA_Fn-UseC_-HR-Employee-Attrition (1).csv
+   • Total Records: 1,470
+   • Total Features: 33
+   • Memory Usage: 0.93 MB
+
+2. DATA QUALITY
+────────────────────────────────────────────────────────────────────────────────
+   • Missing Values: 0 (0%)
+   • Duplicate Rows: 0
+   • Constant Features Removed: 3
+
+3. FEATURE ENGINEERING
+────────────────────────────────────────────────────────────────────────────────
+   Original Features:
+   • Numerical: 24
+   • Categorical: 7
+   
+   After Preprocessing:
+   • Total Features: 30
+   • All categorical features encoded using LabelEncoder
+   • Removed non-informative columns: 2
+
+4. TARGET VARIABLE
+────────────────────────────────────────────────────────────────────────────────
+   • Variable: Attrition (Binary Classification)
+   • Encoding: 'No' → 0, 'Yes' → 1
+   • Class Distribution:
+     - Class 0 (Stayed): 1,233 (83.88%)
+     - Class 1 (Left):   237 (16.12%)
+   • Imbalance Ratio: 5.20:1
+
+5. TRAIN-TEST SPLIT
+────────────────────────────────────────────────────────────────────────────────
+   Strategy: Stratified Random Split (80-20)
+   Random Seed: 42
+   
+   Training Set:
+   • Size: 1,176 samples (80.0%)
+   • Class 0: 986 (83.8%)
+   • Class 1: 190 (16.2%)
+   
+   Testing Set:
+   • Size: 294 samples (20.0%)
+   • Class 0: 247 (84.0%)
+   • Class 1: 47 (16.0%)
+
+6. FEATURE SCALING
+────────────────────────────────────────────────────────────────────────────────
+   Method: StandardScaler (z-score normalization)
+   • Fitted on training data only
+   • Applied to both train and test sets
+   • Mean ≈ 0, Std ≈ 1 for all features
+
+7. CLASS IMBALANCE HANDLING
+────────────────────────────────────────────────────────────────────────────────
+   Method: Computed class weights for model training
+   • Class 0 weight: 0.5963
+   • Class 1 weight: 3.0947
+   • Weight ratio: 5.19:1
+
+8. SAVED ARTIFACTS
+────────────────────────────────────────────────────────────────────────────────
+   ✓ feature_scaler.pkl - StandardScaler object
+   ✓ label_encoders.pkl - Dictionary of LabelEncoders
+   ✓ feature_names.pkl - List of feature names
+   ✓ class_weights.pkl - Class weight dictionary
+   ✓ train_data.npz - Preprocessed training data
+   ✓ test_data.npz - Preprocessed testing data
+
+9. FEATURE LIST (30 features)
+────────────────────────────────────────────────────────────────────────────────
+    1. Age
+    2. BusinessTravel
+    3. DailyRate
+    4. Department
+    5. DistanceFromHome
+    6. Education
+    7. EducationField
+    8. EnvironmentSatisfaction
+    9. Gender
+   10. HourlyRate
+   11. JobInvolvement
+   12. JobLevel
+   13. JobRole
+   14. JobSatisfaction
+   15. MaritalStatus
+   16. MonthlyIncome
+   17. MonthlyRate
+   18. NumCompaniesWorked
+   19. OverTime
+   20. PercentSalaryHike
+   21. PerformanceRating
+   22. RelationshipSatisfaction
+   23. StockOptionLevel
+   24. TotalWorkingYears
+   25. TrainingTimesLastYear
+   26. WorkLifeBalance
+   27. YearsAtCompany
+   28. YearsInCurrentRole
+   29. YearsSinceLastPromotion
+   30. YearsWithCurrManager
+
+================================================================================
+PREPROCESSING COMPLETE - READY FOR MODEL TRAINING
+Report Generated: 2025-11-16 06:05:27
+================================================================================
